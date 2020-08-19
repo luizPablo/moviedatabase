@@ -9,6 +9,7 @@ import {
     TextInput
 } from 'react-native';
 import { TouchableWithoutFeedback, TouchableOpacity } from 'react-native-gesture-handler';
+import Icon from 'react-native-vector-icons/Feather';
 
 import api from '../../services/moviedb.js';
 import styles from './styles';
@@ -99,15 +100,7 @@ const Home = ({ navigation }) => {
                     onChangeText={text => setSearch(text)}
                 />
                 <TouchableOpacity onPress={searchMovies}>
-                    <Text
-                        style={{
-                            fontSize: 10,
-                            fontWeight: 'bold',
-                            color: 'white'
-                        }}
-                    >
-                        SEARCH
-                    </Text>
+                    <Icon name={'search'} size={18} color={'#fff'} />
                 </TouchableOpacity>
             </View>
             <Text style={styles.title}>{activeSearch ? 'Search result' : 'Popular Movies'}</Text>

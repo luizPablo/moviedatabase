@@ -19,10 +19,7 @@ export default StyleSheet.create({
     },
 
     movieInfo: {
-        flex: 1,
         width: '100%',
-        height: 300,
-        padding: 16,
         backgroundColor: '#222A'
     },
 
@@ -55,6 +52,21 @@ export default StyleSheet.create({
     poster: {
         width: 150,
         height: 220,
+        resizeMode: 'cover',
+        borderRadius: 10,
+        backgroundColor: '#222',
+    },
+
+    actorContainer: {
+        flexDirection: 'row', 
+        justifyContent: 'space-between',
+        marginTop: 8,
+        marginBottom: 8,
+    },
+
+    actor: {
+        width: 80,
+        height: 80,
         resizeMode: 'cover',
         borderRadius: 10,
         backgroundColor: '#222',
