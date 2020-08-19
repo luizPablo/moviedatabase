@@ -37,13 +37,12 @@ export default StyleSheet.create({
 
     image: {
         width: '100%',
-        height: 250,
+        height: 200,
         resizeMode: 'cover',
         justifyContent: 'space-between',
         alignItems: 'flex-end',
         marginTop: 16,
         borderRadius: 10,
-        elevation: 3,
         backgroundColor: '#222'
     },
 
