@@ -27,7 +27,13 @@ const App = () => {
                         },
                         headerTintColor: '#fff'
                     }} />
-                    <Stack.Screen name='Movie' component={Movie} />
+                    <Stack.Screen name='Movie' component={Movie} options={{
+                        title: 'Details',
+                        headerStyle: {
+                            backgroundColor: '#777'
+                        },
+                        headerTintColor: '#fff'
+                    }} />
                 </Stack.Navigator>
             </NavigationContainer>
         </>

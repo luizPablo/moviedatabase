@@ -118,7 +118,11 @@ const Home = ({ navigation }) => {
                 onEndReachedThreshold={0.1}
                 onEndReached={loadMore}
                 renderItem={({ item, index }) => (
-                    <TouchableWithoutFeedback key={index.toString()} style={{elevation: 10}}>
+                    <TouchableWithoutFeedback
+                        key={index.toString()}
+                        style={{ elevation: 10 }}
+                        onPress={() => navigation.navigate('Movie', { movie: item })}
+                    >
                         <ImageBackground
                             source={{ uri: constants.MOVIE_DB_IMAGE_URL + '/w780' + item.backdrop_path }}
                             style={styles.image}
